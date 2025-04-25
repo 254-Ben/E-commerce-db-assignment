@@ -12,7 +12,7 @@ This challenge is designed to help learners understand and implement database de
 Through this project, learners will build foundational knowledge in database management, preparing them for more advanced topics in software development and database administration.
 
 ### ERD
-![e-commerce ERD](E-COMMERCE/erd/ERD2(1).pdf)
+![e-commerce ERD](https://github.com/254-Ben/E-commerce-db-assignment/commit/324cfaa6c4944ec7bb483efb0c8538d5363adcbc#diff-d0e09b9e213062526087292984bf21e939f483e7dd399699ec990b4c1fde3020)
 
 ## Contributor
 
