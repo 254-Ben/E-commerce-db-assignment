@@ -1,4 +1,4 @@
-### Train Booking Management System
+### Train E-commerce Management System
 
 The E-commerce platform Management System is an open project designed to help learners understand how to manage and structure databases effectively in the context of a real-world application. The system aims to simulate the process of Understanding and documenting the relationships between tables.
 Identifying primary keys, foreign keys, and other constraints. Learners will gain hands-on experience with database design, including creating tables, defining relationships, and understanding normalization principles. 
