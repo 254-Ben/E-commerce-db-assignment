@@ -4,25 +4,25 @@ CREATE DATABASE ecommerce;
 USE ecommerce;
 -- Table for storing product category information
 CREATE TABLE product_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     clothing VARCHAR(50),
     electronics VARCHAR(50)
 );
 -- Table for storing product attribute information
 CREATE TABLE product_attribute (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     material VARCHAR(50),
     weight DECIMAL(5, 2)
 );
 -- Table for storing product variation information
 CREATE TABLE product_variation (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     size VARCHAR(10),
     color VARCHAR(20)
 );
 -- Table for storing product information
 CREATE TABLE product (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
     brand VARCHAR(50),
     base price DECIMAL(10, 2),
@@ -35,13 +35,13 @@ CREATE TABLE product (
 );
 -- Table for storing atrribute category information
 CREATE TABLE attribute_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     physical VARCHAR(50),
     technical VARCHAR(50)
 );
 -- Table for storing attribute type information
 CREATE TABLE attribute_type (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     description TEXT,
     description NUMBER,
     description BOOLEAN,
@@ -50,13 +50,13 @@ CREATE TABLE attribute_type (
 );
 -- Table for storing size category information
 CREATE TABLE size_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     clothng sizes VARCHAR(10), 
     shoe sizes VARCHAR(10)
 );
 -- Table for storing size option information
 CREATE TABLE size_option (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     small VARCHAR(10),
     medium VARCHAR(10),
     large VARCHAR(10),
@@ -66,24 +66,24 @@ CREATE TABLE size_option (
 );
 -- Table for storing product image information
 CREATE TABLE product_image (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     image_url VARCHAR(255),
     product_id INT,
     FOREIGN KEY (product_id) REFERENCES product(id)
 );
 -- Table for storing color information
 CREATE TABLE color (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     color_name VARCHAR(20)
 );
 -- Table for storing Brand information
 CREATE TABLE brand (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     brand_name VARCHAR(50)
 );
 -- Table for storing product item information
 CREATE TABLE product_item (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     barcode VARCHAR(50),
     quantity INT,
     product_id INT,
